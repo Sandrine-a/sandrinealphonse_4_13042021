@@ -440,9 +440,21 @@ nav .caret {
     margin-bottom: 20px;
 }
 
+.mg-sm {
+    margin-top: 10px;
+}
+
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+.mg-quote {
+    margin-bottom: 0;
+    color: #575757!important;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
 }
 
 .btn {
@@ -699,14 +711,25 @@ p {
     font-weight: 700;
 }
 
+.text-big {
+    font-size: 22px;
+    text-align: center;
+}
+
+.maj-dark {  
+    text-transform: uppercase;
+    color: #333333!important;
+}
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 17px;
     line-height: 1.4em;
+    font-weight: 600;
 }
 
 h3 {
@@ -753,7 +776,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(70, 56, 31, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -767,7 +790,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #3D3C6E;
 }
 
 .bgc-atomic-tangerine {
@@ -805,8 +828,8 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #3D3C6E!important;
+    border-color: #3D3C6E!important;
 }
 
 .bg-dots-bg {
