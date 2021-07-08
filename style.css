@@ -195,7 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .6);
 }
 
 .d-bloc .panel button:hover,
@@ -673,10 +673,6 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -750,7 +746,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(48, 48, 48, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -777,12 +773,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color:rgb(48, 48, 48)!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color:rgb(48, 48, 48)!important;
 }
 
 .ltc-white {
@@ -838,6 +834,18 @@ h4 {
 .new-mgPic {
     margin-right: auto;
     margin-left: auto;
+}
+.new-black {
+    color:rgb(48, 48, 48)!important;
+}
+.new-logoHeight {
+    height: 40px;
+}
+.new-logoWidth {
+    width:100px;
+}
+.new-normal {
+    text-transform: none;
 }
 
 @media (max-width: 1024px) {
@@ -909,7 +917,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    h1,
     h2,
     h3,
     h4,
