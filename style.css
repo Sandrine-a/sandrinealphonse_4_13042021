@@ -335,6 +335,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -777,7 +778,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #FFB572!important;
     color:rgb(48, 48, 48)!important;
 }
 
@@ -800,10 +801,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -842,10 +839,22 @@ h4 {
     height: 40px;
 }
 .new-logoWidth {
-    width:100px;
+    width: 100px;
 }
-.new-normal {
-    text-transform: none;
+.new-list {
+    list-style-type: none;
+    padding: 0;
+}
+.new-Pmg {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.new-pos {
+    position: relative;
+}
+.new-tc {
+    color:  #FFB572!important;
 }
 
 @media (max-width: 1024px) {
