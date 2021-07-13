@@ -14,8 +14,11 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: underline dotted;
+}
+a:focus {
+    border-bottom: 2px dotted black;
 }
 
 #page-loading-blocs-notifaction {
@@ -249,7 +252,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0);
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -261,7 +264,7 @@ a:hover {
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
+    border-color: rgba(0, 0, 0, .7);
 }
 
 .voffset {
@@ -284,7 +287,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 31px;
+    font-weight: bold;
 }
 
 .navbar {
@@ -335,7 +339,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-    text-decoration: underline;
+    border-bottom: 2px dotted #364577;
 }
 
 .navbar-toggle {
@@ -345,10 +349,15 @@ a:hover {
 
 .navbar-toggle:hover {
     background: transparent!important;
+    border: 2px black dotted;
+}
+
+.navbar-toggle:focus {
+    border: 2px #364577 dotted;
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     width: 26px;
 }
 
@@ -458,7 +467,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .8);
 }
 
 button {
@@ -478,6 +487,10 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+}
+
+.icon-md:hover {
+    border-bottom: 2px black dotted;
 }
 
 .icon-lg {
@@ -651,8 +664,8 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
     color: #575757!important;
+    line-height: 1.42857143;
 }
 
 .container {
@@ -755,6 +768,9 @@ h4 {
     font-weight: 900;
     text-decoration: underline!important;
 }
+.bold-link:focus {
+    border-bottom-color: white;
+}
 
 .bgc-white {
     background-color: #FFFFFF;
@@ -777,7 +793,8 @@ h4 {
     color:rgb(48, 48, 48)!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
     background: #FFB572!important;
     color:rgb(48, 48, 48)!important;
 }
@@ -787,7 +804,7 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #FFB572!important;
 }
 
 .ltc-atomic-tangerine {
@@ -795,7 +812,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #FFB572!important;
 }
 
 .icon-dark-slate-blue {
@@ -837,6 +854,10 @@ h4 {
 }
 .new-logoHeight {
     height: 40px;
+}
+.new-logoHeight:hover,
+.new-logoHeight:focus {
+    border-bottom: 2px #364577 dotted;
 }
 .new-logoWidth {
     width: 100px;
@@ -880,13 +901,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only all and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only all and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -904,10 +925,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -916,8 +933,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1030,7 +1045,7 @@ h4 {
         padding: 0 10px;
     }
     .btn-dwn {
-        display: none;
+        display: none
     }
     .voffset {
         margin-top: 5px;

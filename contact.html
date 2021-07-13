@@ -35,7 +35,7 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row" aria-label="menu principal">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo la Chouette agence meilleure agence webesign de Lyon" class="new-logoHeight" /></a>
+							<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo de la Chouette agence meilleure agence webesign de Lyon" class="new-logoHeight" /></a>
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Menu de navigation principal</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -88,30 +88,33 @@
 					</div>
 					<section class="row">
 						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Votre message a été envoyé." fail-msg="Erreur lors de l'envoi du formulaire, l'un des  champs obligatoire n'est pas correctement complété, merci de vérifer et retentter.">
+							<form id="form_1" aria-label="formulaire de contact" novalidate>
 								<p class="form-group">
 										<label for="name">
-											Nom
+											Nom *
 										</label>
-					          <input id="name" name="name" class="form-control" required />
+					          <input id="name" name="name" class="form-control" type="text"  required  />
 									</p>
 								<p class="form-group">
 									<label for="email">
-										Adresse email
+										Adresse email *
 									</label>
 									<input id="email" name="email" class="form-control" type="email" required />
 								</p>
 								<p class="form-group">
 									<label for="input_504">
-										Comment nous avez-vous connu ?
+										Comment nous avez-vous connu ? *
 									</label>
-									<input id="input_504" name="input_504" class="form-control" type="text" maxlength="100" required />
+									<input id="input_504" name="input_504" class="form-control" type="text" maxlength="150" required />
 								</p>
 								<p class="form-group">
 									<label for="message">
-										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label><textarea id="message" name="name" class="form-control" rows="4" cols="50" required></textarea>
+										Brief de votre projet *
+									</label><textarea id="message" name="name" class="form-control" rows="4" cols="50" placeholder="Merci d'ajouter autant de détails que nécessaire." required></textarea>
 								</p> 
+								<p class="h5">
+									* : données obligatoires.
+								</p>
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 									Envoyer
 								</button>
@@ -129,7 +132,7 @@
 			<!-- bloc-7 END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<a class="bloc-button btn btn-d scrollToTop white" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
 
 			<!-- Footer - bloc-8 -->
@@ -169,10 +172,10 @@
 										Partenaires
 									</p>
 									<ul class="col-12 new-list tight-width-whitespace ">
-										<li class="col-sm-3"><a href="voiture.com" class="new-black" target="blank" aria-label="Site de notre partenaire">voiture</a></li>
-										<li class="col-sm-3"><a href="pizza.com" class="new-black" target="blank" aria-label="Site de notre partenaire">pizza</a></li>
-										<li class="col-sm-3"><a href="matoiture.com" class="new-black" target="blank" aria-label="Site de notre partenaire">matoiture</a></li>
-										<li class="col-sm-3"><a href="immobilierseo.com" class="new-black" target="blank" aria-label="Site de notre partenaire">immobilierseo</a></li>
+										<li class="col-sm-3"><a href="voiture.com" class="new-black" target="blank" aria-label="Site de notre partenaire voiture.com">voiture</a></li>
+										<li class="col-sm-3"><a href="pizza.com" class="new-black" target="blank" aria-label="Site de notre partenaire pizza.com">pizza</a></li>
+										<li class="col-sm-3"><a href="matoiture.com" class="new-black" target="blank" aria-label="Site de notre partenaire matoiture.com">matoiture</a></li>
+										<li class="col-sm-3"><a href="immobilierseo.com" class="new-black" target="blank" aria-label="Site de notre partenaire immobilierseo.com">immobilierseo</a></li>
 									</ul>		
 								</div>
 							</div>
