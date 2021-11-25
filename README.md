@@ -17,6 +17,7 @@
 2. Le rapport d’analyse SEO du site
 3. Un rapport d’optimisation comprenant une comparaison des résultats
 
-##  [Optimisation](https://sandrine-a.github.io/sandrinealphonse_4_13042021/)
+## [Optimisation](https://sandrine-a.github.io/sandrinealphonse_4_13042021/)
 
-## Site initial non optimisé: [Init](https://sandrine-a.github.io/sandrinealphonse_p4_initial/)
+Page initiale, site non optimisé:
+### [Init](https://sandrine-a.github.io/sandrinealphonse_p4_initial/)
